@@ -1,0 +1,206 @@
+.tt-category-featured {
+	float: left;
+	margin: 0 0 35px;
+	position: relative;
+	width: 100%;
+}
+.tt-category-featured .ttfcat-items {
+  float: left;
+  width: 100%;
+}
+.tt-category-featured .category-feature.tt-carousel {
+  margin-bottom: 0;
+  width: auto;
+}
+.tt-category-featured .item {
+	float: left;
+	padding: 15px;
+	width: 100%;
+}
+.tt-category-featured .content {
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px; 
+	-khtml-border-radius: 8px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.tt-category-featured .image {
+    float: left;
+	padding: 0;
+	width: 100%;
+}
+.tt-category-featured .image > a {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.tt-category-featured .image a img {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 100%;
+}
+.tt-category-featured .caption {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	bottom: 15px;
+	height: 60px;
+	left: 0;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	position: absolute;
+	right: 0;
+	transition: all 400ms ease 0s;
+	width: 90%;
+}
+.tt-category-featured .item:hover .caption {
+	height: 90%;
+}
+.tt-category-featured .cat-title > h4 {
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tt-category-featured .cat-title {	
+	float: left;
+	position: relative;
+	width: 100%;
+}
+.tt-category-featured .cat-title::before {
+  border-top: 1px solid #999999;
+  bottom: -3px;
+  content: "";
+  float: left;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: auto;
+  margin: 0 auto;
+  width: 0;
+}
+.tt-category-featured .item:hover .cat-title::before {
+	width: 25px;
+}
+.tt-category-featured .cat-title a {
+	color: #ffffff;
+	font: 400 20px/25px "Poppins",Helvetica,sans-serif;
+	margin: 0;
+	text-transform: capitalize;
+	position: relative;
+	white-space: nowrap;
+}
+.tt-category-featured .content:hover .cat-title a {
+	color: #ffffff;
+}
+.tt-category-featured .caption .cat-sub {
+    display: none;
+	padding: 40px 0 0;
+	transition: all 400ms ease 0s;
+	float: left;
+	width: 100%;
+}
+.tt-category-featured .item:hover .caption .cat-sub {
+	display: inline-block;
+}
+.tt-category-featured .caption .cat-sub ul {
+	margin: 0;
+	padding: 0;
+}
+.tt-category-featured .cat-sub li {
+  list-style: outside none none;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.tt-category-featured .caption .cat-sub li a,
+.tt-category-featured .cat-sub li.more span {
+	background: none;
+	border: medium none;
+	border-radius: 0;
+	-moz-border-radius: 0; 
+	-webkit-border-radius: 0; 
+	-khtml-border-radius: 0;
+	color: #cccccc;
+	font: 400 15px/30px "Poppins",Helvetica,sans-serif;
+	padding: 0;
+	position: relative;
+	text-transform: capitalize;
+}
+.tt-category-featured .caption .cat-sub li a:hover,
+.tt-category-featured .cat-sub li.more span:hover {
+	color: #ffffff;
+}
+.tt-category-featured .cat-sub li.more span {
+	background: #d10201;
+	border-radius: 25px;
+	color: #ffffff;
+	padding: 7px 20px;
+	position: relative;
+}
+.tt-category-featured .cat-sub li.more span:hover {
+	background: #ffffff;
+	color: #111111;
+}
+.tt-category-featured .cat-sub li.more span::after {
+  content: "\f105";
+  font-size: 16px;
+  font-family: "FontAwesome";
+  padding: 0 0 0 5px;
+}
+.tt-category-featured .cat-sub li.more {
+  margin: 20px 0 0;
+}
+@media (max-width: 1199px) {
+	.tt-category-featured .caption .cat-sub ul {
+	  margin: 0;
+	}
+}
+@media (max-width: 991px) {
+	.tt-category-featured {
+		margin: 0 0 15px;
+	} 
+}
+@media (max-width: 767px) {
+	.tt-category-featured .content {
+		border: none;
+		border-radius: 0;
+	}
+	.tt-category-featured .image {
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	.tt-category-featured .caption,
+	.tt-category-featured .item:hover .caption {
+	  position: static;
+	  width: 100%;
+	  height: 100%;
+	}
+	.tt-category-featured .caption .cat-sub {
+		display: inline-block;
+		padding: 10px 0 0;
+	}
+	.tt-category-featured .cat-title::before {
+		width: 25px;
+	}
+}
+@media (max-width: 480px) {
+.tt-category-featured .ttfcat-items {
+	margin: 0;
+}
+.tt-category-featured .caption .cat-sub li a, 
+.tt-category-featured .cat-sub li.more span {
+	font-size: 12px;
+}
+}
